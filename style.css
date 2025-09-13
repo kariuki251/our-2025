@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Comic Sans MS, cursive, sans-serif;
+}
+
+body {
+    background: #fffafc;
+    color: #333;
+    line-height: 1.6;
+}
+
+header{
+    background: pink;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid hotpink;
+}
+
+header h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+nav a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+nav a.active {
+    color: aqua;
+    text-decoration: overline;
+}
+
+.intro, .message, .timeline, .music {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.item {
+background: ffe6f0;
+padding: 10px;
+border-radius: 15px;
+text-align: center;
+box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.item img, .item video, .item iframe{
+    width: 100%;
+    border-radius: 12px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.item p {
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+.music {
+    background: #ffe6f0;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.music audio{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.timeline ul{
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.timeline li {
+    background: #ffe6f0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background: pink;
+    margin-top: 30px;
+    font-size: 0.85rem;
+}
